@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Sana AI — a simple AI assistant for learning, writing and everyday questions.">
+  <title>Sana AI Assistant</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand-mark">✦</div>
+      <div>
+        <h1>Sana AI</h1>
+        <p>Your helpful AI assistant</p>
+      </div>
+      <button id="clearBtn" class="clear-btn" title="Clear conversation">Clear</button>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite">
+      <div class="welcome" id="welcome">
+        <div class="sparkle">✦</div>
+        <h2>How can I help you today?</h2>
+        <p>Ask a question, learn something new, or get help with writing.</p>
+        <div class="suggestions">
+          <button class="suggestion">Explain artificial intelligence simply</button>
+          <button class="suggestion">Help me practice English</button>
+          <button class="suggestion">Give me a study plan</button>
+        </div>
+      </div>
+    </main>
+
+    <form id="composer" class="composer">
+      <textarea id="message" rows="1" maxlength="8000" placeholder="Message Sana AI..." aria-label="Write your message"></textarea>
+      <button id="sendBtn" type="submit" aria-label="Send message">➤</button>
+      <p class="disclaimer">AI can make mistakes. Check important information.</p>
+    </form>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
